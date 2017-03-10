@@ -30,7 +30,7 @@ public class GamePage extends AppCompatActivity {
                 Intent comment = new Intent(GamePage.this, Comment.class);
                 startActivity(comment);
                 return true;
-            case R.id.app_bar_search:
+            case R.id.share:
                 return true;
 
             default:

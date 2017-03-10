@@ -2,13 +2,6 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/app_bar_search"
-        android:actionViewClass="android.widget.SearchView"
-        android:icon="@drawable/ic_search_black_24dp"
-        android:title="@string/search"
-        android:visible="true"
-        app:showAsAction="always" />
-    <item
         android:id="@+id/share"
         android:checkable="false"
         android:enabled="true"
@@ -17,8 +10,8 @@
         android:visible="true"
         app:showAsAction="always"
         android:actionProviderClass="android.widget.ShareActionProvider"
-        />	
-		
+        />
+
     <item
         android:id="@+id/feedback"
         android:actionViewClass="android.widget.ImageButton"
@@ -26,6 +19,11 @@
         android:title="@string/feedbackbutton"
 
         android:visible="true" />
-
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:title="Search"/>
 
 </menu>
