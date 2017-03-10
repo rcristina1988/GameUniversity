@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Game</string>
+    <string name="feedback">Please give us your feedback. Thank you.</string>
+    <string name="gameboard">Game Board</string>
+    <string name="myname">Rita Cristina</string>
+    <string name="option1">Reasonable</string>
+    <string name="satisfatoria">Satisfactory</string>
+    <string name="submeter">Submit</string>
+    <string name="start">Start</string>
+    <string name="feedbackbutton">Feedback</string>
+    <string name="search">Search</string>
+    <string name="share">Share</string>
+</resources>
