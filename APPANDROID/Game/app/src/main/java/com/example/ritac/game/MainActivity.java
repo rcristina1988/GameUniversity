@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(comment);
                 return true;
                 case R.id.share:
-
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -69,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         init();
-
         exitApp();
 
 
