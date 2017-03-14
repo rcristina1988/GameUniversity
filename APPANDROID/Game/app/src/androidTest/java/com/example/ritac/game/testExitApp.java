@@ -1,5 +1,6 @@
 package com.example.ritac.game;
 
+import android.app.ActivityManager;
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.filters.LargeTest;
@@ -16,7 +17,6 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static android.content.ContentValues.TAG;
 import static android.support.test.InstrumentationRegistry.getInstrumentation;
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.Espresso.openActionBarOverflowOrOptionsMenu;
@@ -35,7 +35,7 @@ import static org.junit.Assert.*;
  */
 @RunWith(AndroidJUnit4.class)
 @LargeTest
-public class MainActivityInstrumentationTest {
+public class testExitApp {
 
 
     @Rule
@@ -44,19 +44,10 @@ public class MainActivityInstrumentationTest {
     @Test
     public void Test(){
 
-        onView(withText("Start")).perform(click());
-        Log.i("Button Start", "Have been Clicked");
-        onView(withId(R.id.textView3)).check(matches(withText("Game Board")));
-        Log.i("The text 'Game board'" , "Is present in the page");
-        onView(withId(R.id.action_search)).perform(click());
-        Log.i("Search Button", "Have been Clicked");
         openActionBarOverflowOrOptionsMenu(getInstrumentation().getTargetContext());
-        onView(withText("Feedback")).perform(click());
-        Log.i("Feedback Option", "Have been Clicked");
-        onView(withId(R.id.buttonSubmit)).perform(click());
-        Log.i("Submit Button", "Have been Clicked");
-
-
+        onView(withId(R.id.buttonExit)).perform(click());
+        Log.i("Exit Button", "Have been Clicked");
+        Log.i("This is a negative test", "Test should failed");
 
     }
 }
