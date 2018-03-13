@@ -36,8 +36,7 @@ import static org.junit.Assert.*;
 @RunWith(AndroidJUnit4.class)
 @LargeTest
 public class MainActivityInstrumentationTest {
-
-
+    
     @Rule
     public ActivityTestRule mActivityRule = new ActivityTestRule<>(
             MainActivity.class);
@@ -55,8 +54,5 @@ public class MainActivityInstrumentationTest {
         Log.i("Feedback Option", "Have been Clicked");
         onView(withId(R.id.buttonSubmit)).perform(click());
         Log.i("Submit Button", "Have been Clicked");
-
-
-
     }
 }
